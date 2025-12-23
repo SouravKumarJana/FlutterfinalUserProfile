@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class BarElememt extends StatelessWidget{
+class BarElement extends StatelessWidget{
   final String? name;
   final Icon icon;
   final TextStyle textStyle;
   final VoidCallback callback;
 
-  const BarElememt({super.key, 
+  const BarElement({super.key, 
   this.name, 
   required this.icon, 
   required this.textStyle, 

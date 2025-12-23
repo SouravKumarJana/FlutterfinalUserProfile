@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'firstscreen.dart';
+import 'package:flutter_application_2/widgets/first_screen.dart';
+import 'package:flutter_application_2/widgets/grid_screen.dart';
 import 'second_screen.dart';
 import 'bar_stack.dart';
 import 'contact_list.dart';
+import 'grid_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     ContactList(),
     SecondScreen(),
     FirstScreen(),
-    FirstScreen()
+    GridScreen()
   ];
 
   void onTabChanged(int index) {

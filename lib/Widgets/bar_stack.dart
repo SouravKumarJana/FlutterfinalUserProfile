@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'bar_elememt.dart';
+import 'package:flutter_application_2/widgets/bar_element.dart';
 import 'text_style.dart';
 
 class BarStack extends StatelessWidget {
@@ -12,31 +12,31 @@ class BarStack extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        BarElememt(
+        BarElement(
           name: 'Home',
           icon: const Icon(Icons.home),
           textStyle: textStyle,
           callback: () => onIndexChanged(0),
         ),
-        BarElememt(
+        BarElement(
           name: 'Play',
           icon: const Icon(Icons.play_circle_fill),
           textStyle: textStyle,
           callback: () => onIndexChanged(1),
         ),
-        BarElememt(
+        BarElement(
           name: 'Add',
           icon: const Icon(Icons.add),
           textStyle: textStyle,
           callback: () => onIndexChanged(2),
         ),
-        BarElememt(
+        BarElement(
           name: 'Subscriptions',
           icon: const Icon(Icons.subscriptions),
           textStyle: textStyle,
           callback: () => onIndexChanged(3),
         ),
-        BarElememt(
+        BarElement(
           name: 'Shorts',
           icon: const Icon(Icons.video_call),
           textStyle: textStyle,
