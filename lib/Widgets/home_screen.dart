@@ -4,7 +4,6 @@ import 'package:flutter_application_2/widgets/grid_screen.dart';
 import 'second_screen.dart';
 import 'bar_stack.dart';
 import 'contact_list.dart';
-import 'grid_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
