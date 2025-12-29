@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'userprofile_widgets/profile_avatar.dart';
-import 'userprofile_widgets/info_card_stack.dart';
-import 'userprofile_widgets/rounded_button.dart';
-import 'userprofile_widgets/text_style_widgets/button_text_style.dart';
-import 'userprofile_widgets/text_style_widgets/text_style.dart';
+import 'userprofile/profile_avatar.dart';
+import 'userprofile/info_card_stack.dart';
+import 'userprofile/rounded_button.dart';
+import 'userprofile/text_style/button_text_style.dart';
+import 'userprofile/text_style/text_style.dart';
 import '../items/contact_data.dart';
 
 class UserprofileScreen extends StatelessWidget{
