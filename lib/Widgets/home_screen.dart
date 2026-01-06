@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/widgets/first_screen.dart';
 import 'package:flutter_application_2/widgets/grid_screen.dart';
+import 'package:flutter_application_2/widgets/weather_screen.dart';
 import 'second_screen.dart';
 import 'bar_stack.dart';
 import 'contact_list.dart';
@@ -19,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
     FirstScreen(),
     ContactList(),
     SecondScreen(),
-    FirstScreen(),
+    WeatherScreen(),
     GridScreen()
   ];
 

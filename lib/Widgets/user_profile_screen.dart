@@ -4,7 +4,7 @@ import 'userprofile/info_card_stack.dart';
 import 'userprofile/rounded_button.dart';
 import 'userprofile/text_style/button_text_style.dart';
 import 'userprofile/text_style/text_style.dart';
-import '../items/contact_data.dart';
+import '../data/contact_data.dart';
 
 class UserprofileScreen extends StatelessWidget{
   final Contact contact;

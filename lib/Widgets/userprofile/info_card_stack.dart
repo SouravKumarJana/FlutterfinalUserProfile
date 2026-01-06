@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'card.dart';
-import '../../items/contact_data.dart';
+import '../../data/contact_data.dart';
 
 class InfoCardStack extends StatelessWidget{
   final Contact contactInfo;

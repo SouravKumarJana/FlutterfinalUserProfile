@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../items/contact_data.dart';
+import '../data/contact_data.dart';
 import 'user_profile_screen.dart';
 
 class ContactList extends StatelessWidget {

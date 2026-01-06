@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'grid_items.dart';
-import '../items/grid_data.dart';
+import '../data/grid_data.dart';
 
 class GridScreen extends StatelessWidget {
   const GridScreen({super.key});
