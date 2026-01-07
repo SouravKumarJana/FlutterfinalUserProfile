@@ -34,10 +34,10 @@ class _WeatherScreenState extends State<WeatherScreen> {
     if (data != null) {
 
       setState(() {
-        location = data['name'].toString();
-        temperature = data['main']['temp'].toString();
-        description = data['weather'][0]['main'];
-        humidity = data['main']['humidity'].toString();
+        location = data['name']?.toString() ?? 'failed to fetch the location';
+        temperature = data['main']?['temp']?.toString() ?? 'unknown';
+        description = data['weather']?[0]?['main'] ?? 'unknown';
+        humidity = data['main']?['humidity']?.toString() ?? 'unknown';
         isLoading = false;
       });
     } else {
