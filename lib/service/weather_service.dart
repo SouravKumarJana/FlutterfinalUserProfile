@@ -19,6 +19,7 @@ class WeatherService {
         queryParameters: {
           'lat': lat,
           'lon': lon,
+          'units': 'metric',
           'appid': _apiKey,
         },
       );

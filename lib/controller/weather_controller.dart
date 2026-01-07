@@ -18,7 +18,7 @@ class WeatherController {
       location = data['name']?.toString() ?? 'Unknown';
       temperature = data['main']?['temp']?.toString() ?? '0';
       humidity = data['main']?['humidity']?.toString() ?? '0';
-      description = data['weather']?[0]?['main'] ?? 'Unknown';
+      description = data['weather']?[0]['main'] ?? 'Unknown';
     } else {
       description = 'Error';
     }
