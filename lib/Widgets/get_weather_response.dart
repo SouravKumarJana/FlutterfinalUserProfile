@@ -11,7 +11,10 @@ class WeatherResponse {
       final response = await dio.get(
         '$base_url?lat=$lat&lon=$lon&units=metric&appid=$apiKey',
       );
-      
+      // print(response);
+      // print(response.data);         
+      // print(response.statusCode);
+      // print(response.data ['name']);
       if (response.statusCode == 200) {
        
         return Map<String, dynamic>.from(response.data); 

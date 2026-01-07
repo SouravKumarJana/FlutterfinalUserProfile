@@ -15,6 +15,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
   String description = "Loading...";
   String humidity = "0";
   bool isLoading = true;
+  String location = '';
 
   @override
   void initState() {
@@ -31,15 +32,16 @@ class _WeatherScreenState extends State<WeatherScreen> {
     if (!mounted) return; 
 
     if (data != null) {
-     
-      
+
       setState(() {
+        location = data['name'].toString();
         temperature = data['main']['temp'].toString();
         description = data['weather'][0]['main'];
         humidity = data['main']['humidity'].toString();
         isLoading = false;
       });
     } else {
+
       setState(() {
         description = "Error";
         isLoading = false;
@@ -67,7 +69,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Kolkata', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                    Text(location, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                     const SizedBox(height: 8),
                     Row(
                       children: [
